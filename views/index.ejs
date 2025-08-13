@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zain Habib | Personal Blog</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <!-- Cosmic Background Elements -->
+    <div id="stars-container"></div>
+    <div id="nebula" style="top: 20%; left: 10%;"></div>
+    <div id="planet" style="bottom: 10%; right: 10%;"></div>
+    <div id="smoke"></div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <div class="logo">UI/UX Designer And React Develoepr</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="home" class="hero">
+            <h1>Welcome to my Profile</h1>
+            <p>Join me on a journey through Designs and code. And Grow togather with me</p>
+            <a href="#blog" class="cta-button pulse">Begin Exploration</a>
+        </section>
+        
+        <section id="blog" class="blog-section">
+            <h2 class="section-title">Latest Figma Designs</h2>
+            <div class="posts">
+                <article class="post-card">
+                    <div class="post-image" style="background-image: url('/images/b1.png')"></div>
+                    <div class="post-content">
+                        <div class="post-date">June 15, 2023</div>
+                        <h3 class="post-title">The VR Headset Poster Designs</h3>
+                        <p class="post-excerpt">Step into new worlds with ultra-responsive tracking, stunning visuals, and all-day comfort. This VR headset delivers immersive experiences for gaming, exploration, and beyond—where reality meets imagination.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-image" style="background-image: url('/images/b2.png')"></div>
+                    <div class="post-content">
+                        <div class="post-date">May 28, 2023</div>
+                        <h3 class="post-title">Web Design for Real Estate Owners</h3>
+                        <p class="post-excerpt">Connecting people with properties through trust, insight, and personalized service. From cozy homes to prime investments, we turn real estate goals into reality.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-image" style="background-image: url('/images/b3.png')"></div>
+                    <div class="post-content">
+                        <div class="post-date">April 12, 2023</div>
+                        <h3 class="post-title">Making design for Bycycle Shop</h3>
+                        <p class="post-excerpt">From rugged mountain bikes to sleek city cruisers, we offer quality, style, and expert service. Gear up for every journey—because every ride starts here.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <section id="about" class="about">
+            <img src="/images/logo.jpg" alt="Cosmic Wanderer" class="about-image">
+            <div class="about-content">
+                <h2>About The Zain Habib</h2>
+                <p>
+                    I'm a thoughtful and curious creator who bridges the gap between intuitive design and dynamic development. With a strong foundation in React.js, Axios, and GSAP, I craft responsive web applications that are as functional as they are visually engaging.
+                    <p> My design approach is rooted in user-centered principles, leveraging Gestalt theory, wireframing, and persona-driven insights to solve real user frustrations.</p>
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">🔗</a>
+                    <a href="#" class="social-link">📚</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Send Message for Services</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Transmit Message</button>
+            </form>
+        </section>
+        
+        <footer>
+            <p>© 2023 Cosmic Wanderer. All rights reserved.</p>
+            <p>Made with stardust and curiosity.</p>
+        </footer>
+    </div>
+    <script src="/javascripts/script.js"></script>
+</body>
+</html>
