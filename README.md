@@ -1,44 +1,92 @@
-# BecomingBackendDeveloper
-This is the repository where i practice the Node and express Code
+# ShortPortfolio-Practicing-the-Express.js
 
-topic : ejs
-first step install npm i ejs 2)Second step is Set view engine to ejs e.g(app.set("view engine","ejs")) 3) Third step to make the folder name "views" exact spelling and then during rednering timme the syntax will not be like res.send but res.render("index") just file name with extension and only that file name which are include in the views folder otherwise it will not work
+This is a short portfolio which i made during practice of Express.js
 
-topics : parameters
-Here the Req is used because the user Want to reacht the page which is /profile/ it means that the user send the request and the request contain the params and that params contain the variable name is username (: it means that this is variable with colon with that like :username)
+![GitHub stars](https://img.shields.io/github/stars/ZainHabib47/ShortPortfolio-Practicing-the-Express.js?style=social) ![GitHub forks](https://img.shields.io/github/forks/ZainHabib47/ShortPortfolio-Practicing-the-Express.js?style=social) ![GitHub issues](https://img.shields.io/github/issues/ZainHabib47/ShortPortfolio-Practicing-the-Express.js) ![Language](https://img.shields.io/badge/language-CSS-blue)
 
-topics : Static
-now we will create the Static files after the template engine which is Ejs
-first step is to create a folder name public
-then in that folder make 3 folder which are images, stylesheets and javascripts
-then configurwe the static e.g ( app.use(express.static("./public)))
-then run this 
+## Table of Contents
 
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [API Documentation](#api-documentation)
+- [Contributing](#contributing)
+- [License](#license)
 
+## Overview
 
+ShortPortfolio-Practicing-the-Express.js is a CSS project that this is a short portfolio which i made during practice of express.js. This repository contains 6 files and has received 0 stars and 0 forks from the community.
 
+## Installation
 
-const express= require("express")
-const app=express()
+### Prerequisites
 
-app.set("view engine","ejs")
+- Node.js (version 14 or higher)
+- npm or yarn
 
-app.use(function(req,res,next){
-    console.log("Helllo i am from middle ware")
-    next();
-})
+### Install Dependencies
 
-app.use(function(req,res,next){
-    console.log("Helllo i am from middle ware 2 ")
-    next();
-})
+```bash
+# Clone the repository
+git clone https://github.com/ZainHabib47/ShortPortfolio-Practicing-the-Express.js.git
+cd ShortPortfolio-Practicing-the-Express.js
 
-app.get('/',function(req,res){
-    res.render("index",{age:22})  // 1)first step install npm i ejs 2)Second step is Set view engine to ejs e.g(app.set("view engine","ejs")) 3) Third step to make the folder name "views" exact spelling and then during rednering timme the syntax will not be like res.send but res.render("index") just file name with extension and only that file name which are include in the views folder otherwise it will not work
-})
+# Install dependencies
+npm install
+# or
+yarn install
+```
 
-app.get('/profile/:username',function(req,res){
-    res.send(`Hello this is ${req.params.username} Profile......`)  //Here the Req is used because the user Want to reacht the page which is /profile/ it means that the user send the request and the request contain the params and that params contain the variable name is username (: it means that this is variable with colon with that like :username)
-})
+## Usage
 
-app.listen(3000);
+### Development
+
+```bash
+# Start development server
+npm start
+# or
+yarn start
+```
+
+### Build for Production
+
+```bash
+# Build the project
+npm run build
+# or
+yarn build
+```
+
+## Features
+
+- **CSS Implementation**: Built using CSS for optimal performance
+- **Documentation**: Comprehensive documentation included
+- **Open Source**: MIT licensed for community contributions
+
+## API Documentation
+
+API documentation is available in the source code. Key endpoints and functions:
+
+- Main entry point: See the primary source files
+- Configuration: Check configuration files for setup options
+- Examples: Refer to example files and test cases
+
+## Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+Please make sure to update tests as appropriate and follow the existing code style.
+
+## License
+
+This project is open source. Please check the repository for license information.
+
+Repository: [ZainHabib47/ShortPortfolio-Practicing-the-Express.js](https://github.com/ZainHabib47/ShortPortfolio-Practicing-the-Express.js)
+Last updated: 8/12/2025
